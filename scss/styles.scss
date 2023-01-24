@@ -151,7 +151,9 @@ header {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s;
-
+img {
+  border-radius: 50%;
+}
     ul {
         display: inline-block;
         background: $background;
