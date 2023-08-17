@@ -1,446 +1,141 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html>
+  <head>
+    <title>Zahra's Resume</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-<style>
-    .vl {
-        border-left: 6px solid blue;
-        height: 50px;
-    }
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
 
-    .contain {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid black;
-        text-align: center;
-    }
-</style>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/avatar.JPG" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-map-marker w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#photo" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Zahra Aminolroaya.</h1>
+    <p>NLP Enthusiast | Data Science & ML Practitioner.</p>
+    <img src="images/avatar.JPG" alt="boy" class="w3-image" width="292" height="208">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am experienced in Data Science (ML), and I specialize in natural language processing (NLP), casting spells to make computers understand and speak our language.</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <div class='tableauPlaceholder' id='viz1692219235217' style='position: relative'><noscript><a href='#'><img alt='Story 1 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MySkills_16861765409670&#47;Story12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MySkills_16861765409670&#47;Story12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MySkills_16861765409670&#47;Story12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1692219235217');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="photo">
+    <h2 class="w3-text-light-grey">SOME NLP & Data PROJECTS</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-
-            <li>
-                <a href="#posts">Posts</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Zahra Aminolroaya</h1>
-            <h2>Data Science & ML | Data Analysis | NLP </h2>
-            <div class="project-image" style="float:inherit">
-                <img src="images/Zahra.jpg" style="width:20%;  border-radius: 50%;" alt="Avatar" />
-                </br>
-            </div>
-            <!--   <a href="https://github.com/zahramino/zahramino.github.io/raw/9f26e14febffa532ab8f8dbfd6f2b446251012de/Zahra_Aminolroaya_CV_Wesbsite.pdf"
-                class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://github.com/Aminolroaya/Langchain_for_Chat_with_YouTube_Video/blob/main/main.ipynb">Chat with videos using Langchain and VectorDB<img src="images/langchain.png" style="width:100%"> </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7087851199953080320">Alberta homelessness analyis<img src="images/home.png" style="width:100%"> </a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/7959297">Social Network Analysis<img src="images/SNA.png" style="width:100%"> </a>
+        <a href="#">Conversational AI for youth suicide prevention<img src="images/av.png" style="width:100%"> </a>
+        <a href="https://github.com/Aminolroaya/GPTGreenskeeper_chatbot">Prompting for gardening<img src="images/prompt.png" style="width:100%"> </a>
     </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="background-alt">
-
-            <div class="row" style="text-align:center">
-                <h2 class="heading" style="text-align:center">About Me</h2>
-                <div class="container" style='height: 20%;width: 50%;float:inherit;'>
-                    <div class="row">
-
-                        <div class="social d-flex" style="text-align:center">
-                            <!--  <p><i>I am an expert in data science specializing in natural language processing (NLP), with more than 3.5 years in the industry and 6 years in research. I also have a background in data engineering and extended reality (XR). </i></p>-->
-                            <p><i>I aim to utilize my skills to make a positive and meaningful impact on people's
-                                    lives and experiences.</P>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-7 social" style="float:inherit;">
-                        <ul style="float: inherit;">
-                            <!--     <li>
-                                        <button type="button" style="width:50px;height:50px;float:center ;  word-wrap:break-word;
-                                width: 100%;
-                                font-family: segoe ui;
-                                font-size: 14px;
-                                border: 1px solid black;
-                                padding: 8px;  border-radius: 50%;"><a href="https://seriousxr.ca/project/epes/"
-                                                target="_blank">Team
-                                                head</a></button>
-                                    </li>
-                                   <li>
-                                        <button type="button" style="height:50px;float:center ;   word-wrap:break-word;
-                                width:100%;
-                                font-family: segoe ui;
-                                font-size: 14px;
-                                border: 1px solid black;
-                                padding: 8px; border-radius: 50%;"><a
-                                                href="https://cru.ucalgary.ca/resources/machine-learning"
-                                                target="_blank">ML Med </a></button>
-                                    </li>-->
-                            <li>
-                                <a href="https://scholar.google.com/citations?user=GjK6M-wAAAAJ&hl=en"
-                                    target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-                            </li>
-                            <li></li>
-                            <li>
-                                <a href="https://stackoverflow.com/users/3283528/zahra-aminolroaya?tab=profile"
-                                    target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                            </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/zahra-aminolroaya/" target="_blank"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li></li>
-                            <li>
-                                <a href="https://github.com/Aminolroaya" target="_blank"><i class="fa fa-github"
-                                        aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+      <div class="w3-half">
+        <a href="https://medium.com/p/ec20567148c1">LLM-based sentiment analysis<img src="images/net.png" style="width:100%"> </a>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-319-73606-8_8">Plagiarism detection<img src="images/plag.png" style="width:100%"> </a>
         </div>
+    <!-- End photo grid -->
     </div>
-    <!-- End #about -->
-    <div id="skills">
-        <div id="skills" class="background-alt">
-            <h2 class="heading">Skills</h2>
-            <div class="container"'>
-          <div style="width: 70%; height: 50%; float:left ; border: 6px; border-right:20px;" class='tableauPlaceholder' id='viz1689889428525' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MySkills_16861765409670&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MySkills_16861765409670&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MySkills_16861765409670&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1689889428525');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>   </div>
-        </div>
-        </div>
+  <!-- End Portfolio Section -->
+  </div>
+  <div class="w3-padding-32 w3-content" id="photo">
+    <h2 class="w3-text-light-grey">LEISURE TIME</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>in my spare time, my friends and I usually go on a backcountry camping or hiking.</p>
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/IMG_3073.jpg" style="width:100%">
     </div>
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-            <div class="container">
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/av.png"
-                        style="width: 100%; height: 100%; float:left ; border: 6px; border-right:20px;" />
-                    <br>
-                </div>
-                <!-- End .project-image -->
-                <div>
-                    <h3>Youth suicide preventation (NLP, User experience)</h3>
-                    <p style=" font-size: small;">
-                        Responsible for developing and releasing a training system to avoid youth suicide using
-                        NLP and emotion recognition. </p>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/net.png"
-                        style="width: 100%; height: 100%; float:left ; border: 6px; border-right:20px;" />
-                    <br>
-                </div>
-                <!-- End .project-image -->
-                <div>
-                    <h3>Sentiment and Emotion Analysis (NLP, Visualization)</h3>
-                    <p style="text-align:center; font-size: small;">
-                        My responsibility was to pull data from Jira
-                        Service Desk tickets using REST
-                        API, storing data in AWS cloud, performing ML algorithms, like using a fined-tuned model of
-                        BERT for analysis of sentiments/emotions, and proposing a novel data visualization. </p>
-                    <a href="#">Soon to be published in Medium</a>
-
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.jpg" />
-                </div>
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Epilepsy Surgery Prediction (NLP, ML)</h3>
-                    <p>
-                        I was responible for reading
-                        data in different file format, data preprocessing, data analysis and applying ML models to
-                        analyze consensus notes from the
-                        epilepsy pre-surgical evaluation rounds and predict surgery.
-                    </p>
-
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/plag.png" style="width: 50%; float:center" />
-                </div>
-                <!-- End .project-image -->
-                <div>
-                    <h3>Plagiarism Detection (NLP Engineering)</h3>
-                    <p>
-                        As part of my responsibilities, I utilized the Solr interface to manage documents and
-                        implemented NLP techniques to detect plagiarism. </p>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-73606-8_8">Published paper</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.jpg" />
-                </div>
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Pharmacy Data Unification (NLP)</h3>
-                    <p>
-
-                        I used NLP techniques to perform the unification of texts based on their similarities,
-                        allowing for data integration. Additionally, I applied NLP techniques to unify pharmacies
-                        based on their characteristics, specifically for Novo Nordisk distributor.
-                    </p>
-
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- End .project -->
+      <div class="w3-half">
+        <img src="images/IMG_9116.jpg" style="width:100%">
         </div>
-        <div class="container">
-            <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" style="width: 40%; float:left" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Epilepsy Death Predition (ML)</h3>
-                        <p>
-                            I
-                            was responsible for working with relational databases, change features to five-year period,
-                            and apply machine learning methods for predicting death of epileptic patients in five years.
-                        </p>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" style="width: 40%; float:left" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Customer Loyalty (ML, Visualization)</h3>
-                        <p>
-                            We developed a tool using RShiny to analyze and visualize customer loyalty through time
-                            using ML approaches and feature extraction using RFM analysis (recency, frequency,
-                            monetary).
-                        </p>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/SNA.png" style="width: 100%; float:left" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div>
-                        <h3>Network Information Propagation Analysis (ML)</h3>
-                        <p>
-                            I conducted an analysis of the follower-followee network and hashtags on Instagram. This
-                            analysis allowed me to identify and analyze communities within the Instagram platform. By
-                            applying data analysis techniques to the Instagram network, I was able to gain insights into
-                            the behavior of users and their engagement with content.
-                        </p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7959297">Published paper</a>
-                        <br>
-                        <a href="https://github.com/Aminolroaya/Iran-parliament-election">Processing code</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/bm.jfif" style="width: 70%; float:left" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Network Fraud Analysis (ML, Visualization)</h3>
-                        <p>
-                            As consultants for a banking solutions company (Behsazan Mellat), I provided guidance and
-                            instruction on the use of Gephi for detecting communities related to fraud.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <!-- End .project -->
-
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/aws.png" style="width: 35%; height: 100%; float: left;" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>ETL</h3>
-                        <p>
-                            Over the course of three years, I have gained extensive experience in working with both
-                            relational and non-relational data, including SQL and Solr. Currently, I am working with AWS
-                            for data orchestration. In my work, I utilized Airflow for data management, Apache Zookeeper
-                            for distributing data across nodes, and GraFana to visualize database loads.
-                        </p>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <!-- End .project -->
-
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <!-- End .project -->
-                <div class="project shadow-large">
-
-
-                    <div class="project-image">
-                        <img src="images/rel1.png" style="width: 100%; float: left;" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div>
-                        <h3>Epilepsy Presurgical Evaluation (Visualization, User experience)</h3>
-                        <p>
-                            We developed a tool to help neurologists prepare and present epilepsy data. I proposed a
-                            technique to visualize seizure spread.
-                            <br>
-                            <br>
-
-
-                        </p>
-                        <a href="https://seriousxr.ca/project/epes/">Project page (I was team head)</a><br>
-                        <a href="https://ieeexplore.ieee.org/document/10108772">A published paper</a>
-
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <!-- End .project -->
-
-
-            </div>
-        </div>
+    <!-- End photo grid -->
     </div>
+  <!-- End Portfolio Section -->
+  </div>
 
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
 
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Calgary, AB, Canada</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: z.aminolroaya.com</p>
+    </div><br>
+    <p>Let's get in touch. </p>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://www.linkedin.com/in/zahra-aminolroaya/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/Aminolroaya"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <!-- End footer -->
+</footer>
 
-    <div id="posts">
-        <div id="projects" class="background-alt">
-            <h2 class="heading">Posts</h2>
-            <div class="container">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7087851198841581569" width="800" height="1000" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-            </div>
-        </br>
-        </br>
-            <div class="container">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069164327110381569" height="700"
-                    width="800" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-            </div>
-                    </br>
-        </br>
-            <div class="container">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7023100363666771968" height="250"
-                    width="800" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-             </div>
-            </div>
-        </div>
-    </div>
+<!-- END PAGE CONTENT -->
+</div>
 
-    <div id="contact">
-        <h2>Let's get in Touch</h2>
-        <h2> My email: z.aminolroaya@gmail.com </h3>
-    </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2023</span> Zahra Aminolroaya
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
 </body>
-
 </html>
